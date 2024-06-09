@@ -5,7 +5,7 @@ create_logs() {
     for i in $(seq 1 $num_files); do
         file="log$i.txt"
         echo "File name: $file" > $file
-        echo "Created by: skrypt.sh" >> $file
+        echo "Created by: logs.sh" >> $file
         date >> $file
     done
 }
@@ -21,5 +21,5 @@ case "$1" in
             create_logs $2
         fi
         ;;
-esac' > skrypt.sh
-chmod +x skrypt.sh
+esac' > logs.sh
+chmod +x logs.sh
