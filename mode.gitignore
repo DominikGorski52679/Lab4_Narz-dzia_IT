@@ -1,1 +1,1 @@
-echo 'errorx/' >> .gitignore
+echo 'errorx/' >> mode.gitignore
