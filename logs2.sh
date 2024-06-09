@@ -5,7 +5,7 @@ create_logs() {
     for i in $(seq 1 $num_files); do
         file="log$i.txt"
         echo "File name: $file" > $file
-        echo "Created by: skrypt.sh" >> $file
+        echo "Created by: logs2.sh" >> $file
         date >> $file
     done
 }
@@ -30,4 +30,4 @@ case "$1" in
         echo "Invalid option. Use --help to see available options."
         ;;
 esac
-chmod +x skrypt.sh
+chmod +x logs2.sh
